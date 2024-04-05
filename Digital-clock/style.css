@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root {
+    --background-color: #19172e;
+    --clock-background: rgba(255, 255, 255, 0.05);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+    
+}
+
+body {
+    color: white;
+    background-color: var(--background-color);
+}
+
+.heading {
+    font-size: 2rem;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    padding: 100px;
+}
+
+section {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock {
+    position: relative;
+    width: 450px;
+    height: 150px;
+    background-color: var(--clock-background);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+}
+
+.clock .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.clock .container h2 {
+    font-size: 3.5rem;
+}
+
+.clock .container h2:nth-child(odd) {
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-color: var(--clock-background);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+#ampm {
+    position: relative;
+    top: 30px;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+footer {
+    text-align: center;
+    font-size: 1.5rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-bottom: 0;
+    padding: 5px;
+}
+
+footer a{
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+footer a:visited {
+    color: inherit;
+}
